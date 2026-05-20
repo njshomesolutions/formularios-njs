@@ -7,6 +7,30 @@
   <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+    <style>
+      body {
+        background-image: url('njs-logo.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 60%;
+        background-attachment: fixed;
+        background-color: #f9f9f9;
+      }
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(255,255,255,0.88);
+        z-index: 0;
+      }
+      #root {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+  </head>
 </head>
 <body>
   <div id="root"></div>
